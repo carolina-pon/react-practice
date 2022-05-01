@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from "react-dom";
+import { App } from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+ReactDOM.render(<App />, document.getElementById("root"));
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// JSX記法で関数の返却値としてHTMLのタグが記述でき、コンポーネントとして扱って画面を構成する
+//retutn以降の内容は()で囲うが、1つのタグで囲う必要がある
+// return (
+// <h1>こんにちは！！</h1>
+// <p>お元気ですか？？</p>
+// ); これはエラー出る
+
+// return (
+//   <div>
+//     <h1>こんにちは！！</h1>
+//     <p>お元気ですか？？</p>
+//   </div>
+// ); これならオッケー
